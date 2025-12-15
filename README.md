@@ -1,6 +1,6 @@
 # Employee Leave Management System
 
-A minimal web app where employees request leave and admins approve/reject.
+A web app where employees request leave and admins approve/reject.
 
 - Backend: Node.js, Express.js, MongoDB, JWT, bcrypt, express-validator
 - Frontend: React (Vite), axios, react-router-dom, Bootstrap
@@ -117,7 +117,7 @@ npm run dev
 - End date must not be before start date.
 - Backend calculates `totalDays` (inclusive of start and end dates).
 
-## Validation & Audit (Bonus)
+## Validation & Audit 
 
 - `express-validator` is used on auth and leaves endpoints.
 - Admin actions (approve/reject) are logged into each leave’s `audit` array and printed via a simple logger.
@@ -135,18 +135,6 @@ npm run dev
 - MongoDB connection errors:
   - Verify credentials/cluster in `MONGO_URI` or use local MongoDB.
   - Make sure the database name suffix exists (e.g., `/leave-management`).
+ 
 
-## Submission Checklist (Guidance.md)
 
-- [x] Backend: Node/Express/MongoDB with JWT + bcrypt
-- [x] Roles: Employee/Admin with route-level checks
-- [x] Endpoints: login, create leave, my-leaves, all, approve/reject
-- [x] Business Logic: end date >= start date, totalDays calculation
-- [x] Frontend: Login + minimal dashboards for roles
-- [x] Bonus: Validation + Audit logging
-- [x] Folder structure: `/server`, `/client`
-- [x] README: setup & admin seeding instructions
-
-## License
-
-For assignment/demo purposes.
