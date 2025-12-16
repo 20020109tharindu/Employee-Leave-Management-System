@@ -99,7 +99,7 @@ npm run dev
 2. Login Credentials
 
 - Admin: `admin@company.com` / `admin123`
-- Employee (if seeded above): `employee@example.com` / `employee123`
+- Employee: `employee@example.com` / `employee123`
 
 ## API Overview
 
